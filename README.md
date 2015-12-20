@@ -2,6 +2,8 @@
 
 Reverse the content of a file, write into another file.
 
+It does byte-level reversion, usually works with binary data.
+
 ## Installation
 
 `pip install reverse`
@@ -16,7 +18,7 @@ Hello.
 $ reverse foo.txt foo.txt.rev
 $ cat foo.txt.rev
 .olleH
-$ python reverse.py foo.txt.rev foo.txt.new
+$ reverse foo.txt.rev foo.txt.new
 $ cat foo.txt.new
 Hello.
 ```
